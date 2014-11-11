@@ -7,6 +7,7 @@ O instalador permite customizar no momento da instalação:
 * O nome do banco de dados.
 * O nome do diretório de instalação.
 
+## Como instalar
 Para saber como usar o instalador acesse [comunidade.ieducativa.com.br](http://comunidade.ieducativa.com.br/).
 
 ## Licença
