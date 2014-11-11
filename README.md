@@ -8,7 +8,7 @@ O instalador permite customizar no momento da instalação:
 * O nome do diretório de instalação.
 
 ## Como instalar
-Para saber como usar o instalador acesse [comunidade.ieducativa.com.br](http://comunidade.ieducativa.com.br/).
+Para saber como usar o instalador acesse [comunidade.ieducativa.com.br#instalador](http://comunidade.ieducativa.com.br#instalador).
 
 ## Licença
 Copyright (c) 2014 Lucas D'Avila. Leia os arquivos COPYING.txt e COPYING.LESSER.txt para saber sobre os direitos e limitações da licença.
