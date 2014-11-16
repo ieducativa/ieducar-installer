@@ -279,6 +279,15 @@ config_apache () {
   fi
 }
 
+add_crontab_job () {
+  echo -e '\n\n  * instalando job crontab para inicializar o banco de dados ao iniciar o servidor\n'
+
+  crontab -l > tmp_crontab
+  echo "@reboot $HOME/$APPDIR/ieducar/scripts/db.sh start" >> tmp_crontab
+  crontab tmp_crontab
+  rm tmp_crontab
+}
+
 before_install () {
   dpkg -l ubuntu-desktop >/dev/null 2>/dev/null
   ISSERVER=$? # ! desktop
@@ -298,6 +307,7 @@ install () {
   clone_ieducar
   install_ieducar_packages
   config_apache
+  add_crontab_job
 
   echo -e '\n\n  --------------------------------------------'
   echo -e "\n  Parabéns o i-Educar foi instalado com sucesso,"
