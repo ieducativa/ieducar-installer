@@ -283,7 +283,8 @@ add_crontab_job () {
   echo -e '\n\n  * instalando job crontab para inicializar o banco de dados ao iniciar o servidor\n'
 
   crontab -l > tmp_crontab
-  echo "@reboot $HOME/$APPDIR/ieducar/scripts/db.sh start" >> tmp_crontab
+  echo "@reboot $HOME/.pgvm/environments/8.2.23/bin/postgres -D $HOME/.pgvm/clusters/8.2.23/main" >> tmp_crontab
+
   crontab tmp_crontab
   rm tmp_crontab
 }
