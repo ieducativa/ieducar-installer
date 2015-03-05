@@ -108,7 +108,7 @@ install_apache () {
 
 install_php () {
   echo -e '\n\n  * instalando php\n'
-  sudo apt-get install -y libapache2-mod-php5 php5-pgsql
+  sudo apt-get install -y libapache2-mod-php5 php5-pgsql php5-curl
   exit_if_failed $?
 }
 
