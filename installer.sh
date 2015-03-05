@@ -323,7 +323,7 @@ install () {
 
   echo -e "\n  utilize usuário admin e senha admin"
 
-  echo -e "\n\n  * Receba por email as novidades e atualizações  iEducar, assinando nossa lista de emals em http://goo.gl/gFXSia"
+  echo -e "\n\n  * Receba por email as novidades e atualizações do iEducar, assinando nossa lista de emails em http://goo.gl/gFXSia"
 
   echo -e '\n  --'
   echo -e "  Lucas D'Avila"
