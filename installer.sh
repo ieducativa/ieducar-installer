@@ -160,6 +160,7 @@ install_pg () {
 
   if [ $USER != $DBUSER ]; then
     echo -e '\n\n  * criando usuário do banco de dados\n'
+    ~/.pgvm/environments/8.2.23/bin/psql -d postgres -p 5433 -c "DROP USER IF EXISTS $DBUSER;"
     ~/.pgvm/environments/8.2.23/bin/createuser --superuser $DBUSER -p 5433
     exit_if_failed $?
   fi
