@@ -202,7 +202,7 @@ clone_ieducar () {
   rm -rf $APPDIR
 
   echo -e "\n\n  * clonando repositório ieducar no caminho $HOME/$APPDIR\n"
-  git clone git://github.com/ieducativa/ieducar.git -b ieducativa $APPDIR
+  git -c http.sslVerify=false clone http://softwarepublico.gov.br/gitlab/i-educar/i-educar.git $APPDIR
   exit_if_failed $?
 
   echo -e "\n\n  * reconfigurando ieducar\n"
