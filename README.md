@@ -1,3 +1,7 @@
+### Atualização 
+
+Este instalador foi descontinuado, para instalar o iEducar siga as instruções da [comunidade do software público brasileiro](https://softwarepublico.gov.br/social/i-educar).
+  
 # Instalador do iEducar
 Este instalador permite instalar o software de gestão escolar iEducar em servidores rodando o sistema operacional Ubuntu.  
 
